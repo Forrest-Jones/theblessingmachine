@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2833;
+  padding: 10px 20px;
+  color: rgb(15, 78, 118);
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.08);
+}
+
+.nav-left a,
+.nav-right a,
+.nav-right button {
+  color: #1f2833;
+  background-color: #66fcf1;
+  text-decoration: none;
+  margin-right: 20px;
+  border: 2px solid #66fcf1;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-left a:hover,
+.nav-right a:hover,
+.nav-right button:hover {
+  background-color: #1f2833;
+  color: #66fcf1;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+}
+
+.nav-center h2 {
+  margin-right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-center ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-center li {
+  margin: 0 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-center a {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.nav-center a:hover {
+  color: #66fcf1;
+}
+
+.nav-center span {
+  margin-left: 5px;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  display: none;
+  min-width: 160px;
+  z-index: 1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.user-avatar{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.dropdown.vertical {
+  top: 100%;
+  left: 0;
+}
+
+.dropdown li {
+  list-style-type: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown li:last-child {
+  border-bottom: none;
+}
+
+.dropdown li:hover {
+  background-color: #ddd;
+}
+
+.dropdown a {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-center li:hover .dropdown {
+  display: block;
+}
